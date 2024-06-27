@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 nav{
     display: flex;
     align-items: center;
@@ -23,13 +26,15 @@ nav .space a{
     margin-left: 50px;
 }
 main img{
+    width: 100%;
     position: relative;
     top: 60px;
 }
 main #img-middle{
     position:absolute;
-    top: 60%;
+    top:500px;
     left: 45%;
+
     z-index: 1;
 }
 main #img-middle{
@@ -39,33 +44,82 @@ main #img-middle{
 main #img-middle b{
     background-color: #333;
     padding: 20px;
+    z-index: 0;
 
 }
 #proj{
-    position: relative;
-    top: 60px;
-    margin:30px 0px ;
+    margin:100px 0px 0px 0px;
 }
-#para{
-    position: relative;
-    top: 60px;
+.line{
     margin-top: 30px;
-}
-main hr{
-    position: relative;
-    top: 60px;
-}
-footer{
-    position: relative;
-    top: 70px;
-    background-color: #333;
-    padding: 30px;
-}
-footer p{
-    color: #fff;
-    padding-left: 45%;
 }
 nav a:hover{
     background-color:rgb(166, 163, 163);
     box-sizing: content-box;
+}
+.images img{
+    width: 24%;
+}
+.images{
+    row-gap: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+}
+main #about{
+    margin-top: 100px;
+}
+.manimg h2{
+    margin-top: 80px;
+}
+.imp_images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.manimg{
+    width: 24%;
+}
+.manimg img{
+    width: 100%;
+}
+.manimg button{
+    text-align: center;
+    padding: 5px 40%;
+    border: 0px;
+}
+.manimg button:hover{
+    background-color: rgb(159, 157, 157);
+}
+#space{
+    margin-left: 10px;
+}
+#about1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+form input{
+    font-size: larger;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+}
+#submit{
+    margin-top: 30px;
+    padding: 15px 50px;
+    font-size: x-large;
+    background-color: black;
+    color: #fff;
+}
+.map{
+    margin: 0 10px;
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+    font-size: larger;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
